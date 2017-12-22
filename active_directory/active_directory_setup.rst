@@ -162,7 +162,7 @@ add-users.ps1_ and add-users.csv_
 **Note:** Now you can head back to the Prism_Element_Setup_, and configure Authentication and Roles.
 
 
-.. _rism_Element_Setup: ../prism_element/prism_element_setup.rst
+.. _Prism_Element_Setup: ../prism_element/prism_element_setup.rst
 .. _add-users.ps1: ../active_directory/scripts/add-users.ps1
 .. _add-users.csv: ../active_directory/scripts/add-users.csv
 

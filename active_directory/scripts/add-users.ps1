@@ -20,7 +20,7 @@ ForEach($User in $Users)
 {
  $User.FirstName = $User.FirstName.substring(0,1).toupper()+$User.FirstName.substring(1).tolower()
    $FullName = $User.FirstName
-   $Sam = $User.FirstName
+   $Sam = $User.FirstName 
    $dnsroot = '@' + (Get-ADDomain).dnsroot
    $SAM = $sam.tolower()
    $UPN = $SAM + "$dnsroot"
@@ -33,7 +33,7 @@ try {
         Write-Verbose "[PASS] Created $FullName"
         $successUsers += $FullName
     }
-
+  
 }
 catch {
     Write-Warning "[ERROR]Can't create user [$($FullName)] : $_"
@@ -42,7 +42,7 @@ catch {
 }
 if ( !(test-path $LogFolder)) {
     Write-Verbose "Folder [$($LogFolder)] does not exist, creating"
-    new-item $LogFolder -type directory -Force
+    new-item $LogFolder -type directory -Force 
 }
 
 Write-verbose "Writing logs"

@@ -25,7 +25,7 @@ Using 1 HPOC (If using more then one, do the same on both)
 +------------+--------------------------------------------------------+
 
 
-Overview
+**Overview**
 ************
 
 In this guide we will configure Prism Element for the HPOC you have checked out. This includes the Storage Containers, User VM Network(s), Image Service, Authentication & Roles.

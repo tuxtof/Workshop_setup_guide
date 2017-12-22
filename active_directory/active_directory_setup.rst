@@ -144,7 +144,8 @@ In this step we will be configuring Active Directory for use by our Workshop
 **Step 5 — Adding Workshop Users & Group**
 ******************************************
 
-In this step we will run a powershell script that will create the "Bootcamp Users" AD group, and user01-user20 (also adding them to the Bootcamp Users group)
+In this step we will run a powershell script that will create the "Bootcamp Users" AD group, and user01-user20 
+(also adding them to the Bootcamp Users group)
 
 **Download the following script and csv**
 add-users.ps1_ and add-users.csv_
@@ -161,7 +162,7 @@ add-users.ps1_ and add-users.csv_
 **Note:** Now you can head back to the Prism Element Setup, and configure Authentication and Roles.
 
 
-.. code-block::
+.. code-block:: bash
 
 Import-module activedirectory
 

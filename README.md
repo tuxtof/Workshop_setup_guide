@@ -1,4 +1,4 @@
-# Workshop Setup_ Guide
+# Workshop Setup Guide
 Info needed for an SE to get a environment ready for a workshop/bootcamp
 
 # Basic Workshop Setup

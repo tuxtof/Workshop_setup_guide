@@ -31,7 +31,7 @@ Overview
 In this guide we will configure Prism Element for the HPOC you have checked out. This includes the Storage Containers, User VM Network(s), Image Service, Authentication & Roles.
 
 
-**Configure Prism Elemnent for Workshop**
+**Configure Prism Element for Workshop**
 *****************************************
 
 Start by loging in and accepting the EULA.

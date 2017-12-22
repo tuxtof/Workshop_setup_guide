@@ -147,8 +147,7 @@ In this step we will be configuring Active Directory for use by our Workshop
 In this step we will run a powershell script that will create the "Bootcamp Users" AD group, and user01-user20 (also adding them to the Bootcamp Users group)
 
 **Download the following script and csv**
-add-users.ps1_
-add-users.csv_
+add-users.ps1_ and add-users.csv_
 
 1. Log into the DC VM
 2. create a directory called "scripts" at the root of C:

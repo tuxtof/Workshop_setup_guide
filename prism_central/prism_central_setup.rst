@@ -16,7 +16,7 @@
 ******************************
 
 +--------------------------+------------------------------------------+
-| Prism Cetnral IP         |                             Cluster IP   |
+| Prism Central IP         |                             Cluster IP   |
 +--------------------------+------------------------------------------+
 | Username                 |                             Cluster User |
 +--------------------------+------------------------------------------+
@@ -27,13 +27,13 @@
 **Overview**
 ************
 
-In this guide we will configure Prism Cetnral for the HPOC you have checked out. This includes SSP and Calm (Apps).
+In this guide we will configure Prism Central for the HPOC you have checked out. This includes SSP and Calm (Apps).
 
 
 **Configure Prism Central for Workshop**
 ****************************************
 
-We will start bu installing prism Central
+We will start by installing prism Central
 
 
 **Step 1 — Install Prism Central**
@@ -99,7 +99,7 @@ Change Session Timeout Values
 
 
 **Step 4 — Setup Authentication and Role Mapping**
-*******************************************
+**************************************************
 
 1. Go To Gear --> Authentication
 2. Select **New Directory**
@@ -135,6 +135,12 @@ Change Session Timeout Values
 6. Close the Roale Mapping and Authentication windows
 7. Log out of Prism Central
 8. Log in as **user01@bootcamp.local**
+9. Once you validate you can log in as user01, log out
+10. Log back in as admin
+
+
+**Step 3 — UI Settings**
+************************
 
 
 

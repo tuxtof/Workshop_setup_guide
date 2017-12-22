@@ -77,7 +77,7 @@ Start by loging in and accepting the EULA.
 | Create Pool                         |          10.x.x.50-10.x.x.120      | 
 +-------------------------------------+------------------------------------+
 
-**Step 3 — Image Configurations**
+**Step 3 — Image Configuration**
 *********************************
 
 Verify Image Configurations has what you need for your Workshop
@@ -115,7 +115,7 @@ Change Session Timeout Values
 2. Select **New Directory**
 
 +----------------------------+----------------------------------------+
-| Dircetory Type             |           Active Directory             |
+| Directory Type             |           Active Directory             |
 +----------------------------+----------------------------------------+
 | Name                       |           Bootcamp                     |
 +----------------------------+----------------------------------------+
@@ -133,7 +133,7 @@ Change Session Timeout Values
 5. Click **New Mapping**
 
 +----------------------------+----------------------------------------+
-| Dircetory                  |           Bootcamp                     |
+| Directory                  |           Bootcamp                     |
 +----------------------------+----------------------------------------+
 | LDAP Type                  |           group                        |
 +----------------------------+----------------------------------------+

@@ -9,7 +9,7 @@
 ******************************
 
 +------------+--------------------------------------------------------+
-| DC IP______|                                           10.x.x.40    |
+| DC IP      |                                           10.x.x.40    |
 +------------+--------------------------------------------------------+
 | Username   |                                           Administrator|
 +------------+--------------------------------------------------------+
@@ -75,15 +75,27 @@ In This step we will configure the Windows OS settings we need before we install
 2. Select **Local Server** from the left ribbon in Server Manager
 3. In the Properties Window, select the Ethernet/Network settings
 4. Right click on Ethernet, and configure the IPV4 address with the following info
-	-IP = 10.x.x.40
-	-Netmask = 255.255.255.128
-	-Gateway = 10.x.x.1
-	-DNS 1 = 10.21.253.10
-	-DNS 2 = 10.21.253.11
+	
++------------+--------------------------------------------------------+
+| IP         |                                        10.x.x.40       |
++------------+--------------------------------------------------------+
+| Netmask    |                                        255.255.255.128 |
++------------+--------------------------------------------------------+
+| Gateway    |                                        10.x.x.1        | 
++------------+--------------------------------------------------------+	
+| DNS 1      |                                        10.21.253.10    |
++------------+--------------------------------------------------------+
+| DNS 2      |                                        10.21.253.11    |
++------------+--------------------------------------------------------+	
+	
 5. In the Properties Window, Make Suere Remote Desktop is "Enabled"
 6. In the Properties Window, Make Suere Windows Firewall is "Off"
 7. In the Properties Window, select Computer Name.
-	-Computer Name = DC
+
++----------------+----------------------------------------------------+
+| Computer Name  |                                    DC              |
++----------------+----------------------------------------------------+	
+
 8. Restart Computer
 
 
@@ -100,8 +112,7 @@ In this step we will be installing Domain Services Role
 6. Select Active Director Domain Services
 7. Add Features - Hit **Next**
 8. Select AD DS - Hit **Next**
-9. Confirmation - Hit **Install**
-	-Check "Restart the destination server automatically if required"
+9. Confirmation - Hit **Install** (Check "Restart the destination server automatically if required")
 
 **Note:** Monitor the install, and select **Close** when you see the installation succeeded 
 
@@ -115,7 +126,11 @@ In this step we will be configuring Active Directory for use by our Workshop
 2. Click **more…** from yellow highlighted bar
 3. Click **Promote this serverto a domain controller** under action
 4. Select "Add a new forest" - hit **Next**
-	-Root domain name = bootcamp.local
+
++-------------------+------------------------------------------------+
+| Root domain name  |                                bootcamp.local  |
++-------------------+------------------------------------------------+	
+	
 5. DSRM Password = HPOC Password - hit **Next**
 6. DNS Options - hit **Next**
 7. NetBIOS Name - hit **Next**
@@ -147,7 +162,7 @@ add-users.csv_
 **Note:** Now you can head back to the Prism Element Setup, and configure Authentication and Roles.
 
 
-.. conde-block::
+.. code-block::
 
 Import-module activedirectory
 

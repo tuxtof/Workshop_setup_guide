@@ -1,6 +1,6 @@
-*************************************************
-**Introduction – Configuring HPOC Prism Element**
-*************************************************
+**********************************
+**Configuring HPOC Prism Element**
+**********************************
 
 .. contents::
 
@@ -107,7 +107,7 @@ Change Session Timeout Values
 
 
 **Step 6 — Setup Authentication and Role Mapping**
-*******************************************
+**************************************************
 
 **Note:** Setup & Configure a Domain Controller (Active-Directory_ ) for use with authentication
 

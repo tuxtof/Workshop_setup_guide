@@ -7,5 +7,5 @@ Info needed for an SE to setup a HPOC environment for a workshop/bootcamp
 # Extended Workshop Setup
 Additional items that need to be setup depending on the workshop you are running.
 
-- Calm Workshop needs [Prism Central](./prism_central/prism_central_setup.rst)
-- Citrix Workshop needs [Citrix Infrastructure](./)
+- Calm Workshop needs [Prism Central Setup Guide](./prism_central/prism_central_setup.rst)
+- Citrix Workshop needs [Citrix Infrastructure Setup Guide] "Work In Progress"

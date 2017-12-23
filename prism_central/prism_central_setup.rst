@@ -136,11 +136,88 @@ Change Session Timeout Values
 7. Log out of Prism Central
 8. Log in as **user01@bootcamp.local**
 9. Once you validate you can log in as user01, log out
-10. Log back in as admin
+10. Log back into Prism Central as admin
 
 
-**Step 3 — UI Settings**
-************************
+**Step 5 — Configure Self-Service Admin Management**
+****************************************************
+
+In this section we will configure Self-Service Portal (SSP)
+
+1. Go to Gear --> Self-Service Admin Management
+2. Fill in the following info under Connect to AD, and then click **Next**:
+
++--------------------------+------------------------------------------+
+| Select Active Directory  |            Bootcamp                      |
++--------------------------+------------------------------------------+
+| Username                 |            administrator@bootcamp.local  |
++--------------------------+------------------------------------------+
+| Password                 |            HPOC Password                 | 
++--------------------------+------------------------------------------+
+
+3. Click on **Add Admins**, and add the "Bootcamp Users" group. Click **Save**
+4. Click **Save**
+
+
+**Step 6 — Enable App Management**
+**********************************
+
+In this section we will enable the Apps tab (Calm) of Prism Central
+
+1. Go to Gear --> Enable App Management
+2. Check the box for **Enable App Management**
+3. Verify the box is checked for **Enable Nutanix Seeded Blueprints**
+4. Click **Save**
+5. Monitor Recent Tasks, and watch for the "Volume Group", "Volume Disk", and "Batch Configure" Tasks to complete
+6. Click on the **Apps** Tab in the Top Navigation Ribbon
+7. If you see the Calm UI you are done
+
+
+**Step 7 — Create Project for use in Calm**
+*******************************************
+
+In this section will create a project for use with SSP & Calm
+
+1. Go to Explore --> Projects
+2. Click on **Create Project**
+3. Project Name = Calm
+4. Enter Description if you like
+5. Click **User**
+6. Enter the following info, and click **Save**
+
++----------------------------+----------------------------------------+
+| Name (User or Group)       |           Bootcamp Users (group)       |
++----------------------------+----------------------------------------+
+| Role                       |           Developer                    |
++----------------------------+----------------------------------------+
+
+7. Check the box for the **bootcamp** network, and make it **Default**
+8. Quotas (Optional)
+9. Click **Save**
+
+**Note:** If the Users or Group you added are SSP Admins they will not show as group members. This is because they are already admins, and have access.
+
+
+**Step 8 — Go forth and Create / Demo / Build / Have Fun**
+**********************************************************
+
+Build Some Blueprints / Applications / or deploy from the Marletplace
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

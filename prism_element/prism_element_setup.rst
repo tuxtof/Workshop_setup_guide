@@ -119,6 +119,9 @@ Start by logging in and accepting the EULA.
 | Override DHCP Server                |          Unchecked                 |
 +-------------------------------------+------------------------------------+
 
+5. Click **Save**
+
+
 **Step 3 — Image Configuration**
 *********************************
 
@@ -134,7 +137,8 @@ Verify Image Configurations has what you need for your Workshop
 ***************************************
 
 1. Select the Cluster in the upper left-hand corner
-2. ISCSI Data Services IP = 10.x.x.38
+2. Add the ISCSI Data Services IP = 10.x.x.38
+3. Click **Save**
 
 
 **Step 5 — UI Settings**
@@ -146,12 +150,13 @@ Change Session Timeout Values
 2. Session Timeout for Current User = 30 minutes
 3. Default Session Timeout for all Users = 2 hours
 4. Session Timeout override = Allow unlimited
+5. Click **Save**
 
 
-**Step 6 — Setup Authentication and Role Mapping (If needed for your Workshop)**
-**************************************************
+**Step 6 — Setup Authentication and Role Mapping (If Active Directory is needed for your Workshop)**
+****************************************************************************************************
 
-**Note:** Setup & Configure a Domain Controller (Active-Directory_ ) for use with authentication
+**Note:** Setup & Configure a Domain Controller (Active-Directory_ ) before completing this section.
 
 1. Go To Gear --> Authentication
 2. Select **New Directory**

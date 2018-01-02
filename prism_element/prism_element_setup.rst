@@ -34,7 +34,7 @@
 
 **Example:**
 
-.. Code Block:
+.. Code Block::
 
 	Cluster IP: https://10.21.93.37:9440/console/#login
 

@@ -32,7 +32,7 @@
 | DNS Servers                         |          10.21.253.10,10.21.253.11 |
 +-------------------------------------+------------------------------------+
 
-**Example:**
+**Example (From HPOC Automation Email):**
 
 	*Cluster IP: https://10.21.93.37:9440/console/#login
 

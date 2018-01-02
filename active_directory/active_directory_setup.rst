@@ -149,14 +149,14 @@ In this step we will be configuring Active Directory for use by our Workshop
 In this step we will run a powershell script that will create the "Bootcamp Users" AD group, and user01-user20
 (also adding them to the Bootcamp Users group)
 
-**Download the following script and csv**
-:download:`add-users.ps1_` and :download:`add-users.csv_`
+**Copy the contents of the following script and csv, and create the files on the Server in "C:\\scripts"**
+add-users.ps1_ and add-users.csv_
 
 1. Log into the DC VM
 2. create a directory called "scripts" at the root of C:
-3. Create a directory called "logs" in "c:\scripts"
-4. Copy over the add-users.ps1 and add-users.csv to "C:\scripts"
-5. Update the password in "c:\scripts\add-user.csv" to match the HPOC password
+3. Create a directory called "logs" in "c:\\scripts"
+4. Copy over the add-users.ps1 and add-users.csv to "C:\\scripts"
+5. Update the password in "c:\\scripts\\add-user.csv" to match the HPOC password
 6. Open Powershell, and run the add-user.ps1
 7. Open Active Directory User & Computers, and verify the users and group are there.
 

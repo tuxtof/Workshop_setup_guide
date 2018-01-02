@@ -34,6 +34,7 @@
 
 **Example (From HPOC Automation Email):**
 
+.. code-block::
 **Cluster IP:** https://10.21.93.37:9440/console/#login
 
 Position: 1 SVM IP: 10.21.93.29 Hypervisor IP: 10.21.93.25 IPMI IP: 10.21.93.33

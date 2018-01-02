@@ -34,7 +34,7 @@
 
 **Example:**
 
-.. Code Block: bash
+.. Code Block:
 
 	Cluster IP: https://10.21.93.37:9440/console/#login
 
@@ -63,7 +63,7 @@
 	Subnet Mask: 255.255.255.128
 	Gateway: 10.21.931
 	Nameserver IP: 10.21.253.10
-	
+
 
 **Overview**
 ************

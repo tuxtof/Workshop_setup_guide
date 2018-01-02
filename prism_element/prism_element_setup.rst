@@ -54,14 +54,14 @@
 	CLUSTER CREATION DETAILS
 
 	Number of Initial Nodes: 3
-	AOS Version: 55
+	AOS Version: 5.5
 	Hypervisor Version: AHV 20170830.58 (5.5)
 
 
 	NETWORK INFORMATION
 
 	Subnet Mask: 255.255.255.128
-	Gateway: 10.21.931
+	Gateway: 10.21.9.31
 	Nameserver IP: 10.21.253.10
 
 
@@ -128,7 +128,7 @@ Start by logging in and accepting the EULA.
 Verify Image Configurations has what you need for your Workshop
 
 1. Go to Gear --> Image Configuration
-2. Depending on what you selected when reserving your HPOOC you will see a CentOS7 Image & Windows 2012r2 Image
+2. Depending on what you selected when reserving your HPOC you will see a CentOS7 Image & Windows 2012r2 Image
 3. You may also see a VM for each already deployed. You can decide if you want to use them or delete them.
 4. If you need upload any other ISOs or Images now is a good time to do so
 

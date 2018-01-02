@@ -34,7 +34,7 @@
 
 **Example (From HPOC Automation Email):**
 
-	Cluster IP: https://10.21.93.37:9440/console/#login
+	**Cluster IP:** https://10.21.93.37:9440/console/#login
 
 	Position: 1 SVM IP: 10.21.93.29 Hypervisor IP: 10.21.93.25 IPMI IP: 10.21.93.33
 	Position: 2 SVM IP: 10.21.93.30 Hypervisor IP: 10.21.93.26 IPMI IP: 10.21.93.34
@@ -42,21 +42,21 @@
 	Position: 4 SVM IP: 10.21.93.32 Hypervisor IP: 10.21.93.28 IPMI IP: 10.21.93.36
 
 
-	LOGIN CREDENTIALS
+	**LOGIN CREDENTIALS**
 
 	Prism UI Credentials: admin/Password
 	CVM Credentials: nutanix/Password
 	AHV Host Credentials: root/Password
 
 
-	CLUSTER CREATION DETAILS
+	**CLUSTER CREATION DETAILS**
 
 	Number of Initial Nodes: 3
 	AOS Version: 55
 	Hypervisor Version: AHV 20170830.58 (5.5)
 
 
-	NETWORK INFORMATION
+	**NETWORK INFORMATION**
 
 	Subnet Mask: 255.255.255.128
 	Gateway: 10.21.931

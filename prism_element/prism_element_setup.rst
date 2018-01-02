@@ -34,33 +34,33 @@
 
 **Example (From HPOC Automation Email):**
 
-	**Cluster IP:** https://10.21.93.37:9440/console/#login
+**Cluster IP:** https://10.21.93.37:9440/console/#login
 
-	Position: 1 SVM IP: 10.21.93.29 Hypervisor IP: 10.21.93.25 IPMI IP: 10.21.93.33
-	Position: 2 SVM IP: 10.21.93.30 Hypervisor IP: 10.21.93.26 IPMI IP: 10.21.93.34
-	Position: 3 SVM IP: 10.21.93.31 Hypervisor IP: 10.21.93.27 IPMI IP: 10.21.93.35
-	Position: 4 SVM IP: 10.21.93.32 Hypervisor IP: 10.21.93.28 IPMI IP: 10.21.93.36
-
-
-	**LOGIN CREDENTIALS**
-
-	Prism UI Credentials: admin/Password
-	CVM Credentials: nutanix/Password
-	AHV Host Credentials: root/Password
+Position: 1 SVM IP: 10.21.93.29 Hypervisor IP: 10.21.93.25 IPMI IP: 10.21.93.33
+Position: 2 SVM IP: 10.21.93.30 Hypervisor IP: 10.21.93.26 IPMI IP: 10.21.93.34
+Position: 3 SVM IP: 10.21.93.31 Hypervisor IP: 10.21.93.27 IPMI IP: 10.21.93.35
+Position: 4 SVM IP: 10.21.93.32 Hypervisor IP: 10.21.93.28 IPMI IP: 10.21.93.36
 
 
-	**CLUSTER CREATION DETAILS**
+**LOGIN CREDENTIALS**
 
-	Number of Initial Nodes: 3
-	AOS Version: 55
-	Hypervisor Version: AHV 20170830.58 (5.5)
+Prism UI Credentials: admin/Password
+CVM Credentials: nutanix/Password
+AHV Host Credentials: root/Password
 
 
-	**NETWORK INFORMATION**
+**CLUSTER CREATION DETAILS**
 
-	Subnet Mask: 255.255.255.128
-	Gateway: 10.21.931
-	Nameserver IP: 10.21.253.10
+Number of Initial Nodes: 3
+AOS Version: 55
+Hypervisor Version: AHV 20170830.58 (5.5)
+
+
+**NETWORK INFORMATION**
+
+Subnet Mask: 255.255.255.128
+Gateway: 10.21.931
+Nameserver IP: 10.21.253.10
 
 
 **Overview**

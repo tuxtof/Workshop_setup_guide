@@ -34,7 +34,8 @@
 
 **Example (From HPOC Automation Email):**
 
-.. code-block::
+.. code-block:: bash
+
 	Cluster IP: https://10.21.93.37:9440/console/#login
 
 	Position: 1 SVM IP: 10.21.93.29 Hypervisor IP: 10.21.93.25 IPMI IP: 10.21.93.33
@@ -57,11 +58,11 @@
 	Hypervisor Version: AHV 20170830.58 (5.5)
 
 
-**NETWORK INFORMATION**
+	NETWORK INFORMATION
 
-Subnet Mask: 255.255.255.128
-Gateway: 10.21.931
-Nameserver IP: 10.21.253.10
+	Subnet Mask: 255.255.255.128
+	Gateway: 10.21.931
+	Nameserver IP: 10.21.253.10
 
 
 **Overview**

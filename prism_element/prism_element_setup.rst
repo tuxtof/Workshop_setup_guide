@@ -34,7 +34,7 @@
 
 **Example (From HPOC Automation Email):**
 
-	*Cluster IP: https://10.21.93.37:9440/console/#login
+	Cluster IP: https://10.21.93.37:9440/console/#login
 
 	Position: 1 SVM IP: 10.21.93.29 Hypervisor IP: 10.21.93.25 IPMI IP: 10.21.93.33
 	Position: 2 SVM IP: 10.21.93.30 Hypervisor IP: 10.21.93.26 IPMI IP: 10.21.93.34
@@ -60,7 +60,7 @@
 
 	Subnet Mask: 255.255.255.128
 	Gateway: 10.21.931
-	Nameserver IP: 10.21.253.10*
+	Nameserver IP: 10.21.253.10
 
 
 **Overview**

@@ -5,7 +5,7 @@
 .. contents::
 
 
-**This Setup Guide is designed with these assumtpitons**
+**This Setup Guide is designed with these assumptions**
 ********************************************************
 
 1. AOS 5.5.x (or higher)
@@ -21,7 +21,7 @@
 +------------+--------------------------------------------------------+
 | Username   |                                           Cluster User |
 +------------+--------------------------------------------------------+
-| Password   |                                           Cluster Pass | 
+| Password   |                                           Cluster Pass |
 +------------+--------------------------------------------------------+
 
 
@@ -34,7 +34,7 @@ In this guide we will configure Prism Element for the HPOC you have checked out.
 **Configure Prism Element for Workshop**
 *****************************************
 
-Start by loging in and accepting the EULA.
+Start by logging in and accepting the EULA.
 
 
 **Step 1 — Configure Storage Containers**
@@ -52,29 +52,29 @@ Start by loging in and accepting the EULA.
 2. Select "Network Config"
 3. Select "User VM Interfaces"
 4. Select "Create Network"
-	
+
 +-------------------------------------+------------------------------------+
 | Name                                |          bootcamp                  |
 +-------------------------------------+------------------------------------+
 | VLAN ID                             |          0                         |
 +-------------------------------------+------------------------------------+
-| Enable IP Address Management        |          Checked                   | 
+| Enable IP Address Management        |          Checked                   |
 +-------------------------------------+------------------------------------+
-| Network IP Address / Prefix Length  |          10.x.x.0/23               | 
+| Network IP Address / Prefix Length  |          10.x.x.0/23               |
 +-------------------------------------+------------------------------------+
-| Gateway                             |          10.x.x.1                  |  
+| Gateway                             |          10.x.x.1                  |
 +-------------------------------------+------------------------------------+
 | DNS Servers                         |          10.21.253.10,10.21.253.11 |
 +-------------------------------------+------------------------------------+
-| Domain Search                       |          nutanixdc.local           | 
+| Domain Search                       |          nutanixdc.local           |
 +-------------------------------------+------------------------------------+
-| Domain name                         |          nutanixdc.local           | 
+| Domain name                         |          nutanixdc.local           |
 +-------------------------------------+------------------------------------+
 | TFT Server                          |          empty                     |
 +-------------------------------------+------------------------------------+
 | Boot File                           |          empty                     |
 +-------------------------------------+------------------------------------+
-| Create Pool                         |          10.x.x.50-10.x.x.120      | 
+| Create Pool                         |          10.x.x.50-10.x.x.120      |
 +-------------------------------------+------------------------------------+
 
 **Step 3 — Image Configuration**
@@ -83,9 +83,9 @@ Start by loging in and accepting the EULA.
 Verify Image Configurations has what you need for your Workshop
 
 1. Go to Gear --> Image Configuration
-2. Depending on what you selceted when reserving your HPOOC you will see a CentOS7 Image & Windows 2012r2 Image
+2. Depending on what you selected when reserving your HPOOC you will see a CentOS7 Image & Windows 2012r2 Image
 3. You may also see a VM for each already deployed. You can decide if you want to use them or delete them.
-4. If you need upload any other ISOs or Images now is a good time to do so	
+4. If you need upload any other ISOs or Images now is a good time to do so
 
 
 **Step 4 — Configure Data Services IP**
@@ -106,7 +106,7 @@ Change Session Timeout Values
 4. Session Timeout override = Allow unlimited
 
 
-**Step 6 — Setup Authentication and Role Mapping**
+**Step 6 — Setup Authentication and Role Mapping (If needed for your Workshop)**
 **************************************************
 
 **Note:** Setup & Configure a Domain Controller (Active-Directory_ ) for use with authentication
@@ -119,9 +119,9 @@ Change Session Timeout Values
 +----------------------------+----------------------------------------+
 | Name                       |           Bootcamp                     |
 +----------------------------+----------------------------------------+
-| Domain                     |           bootcamp.local               | 
+| Domain                     |           bootcamp.local               |
 +----------------------------+----------------------------------------+
-| Directory URL              |           ldap://10.x.x.40             | 
+| Directory URL              |           ldap://10.x.x.40             |
 +----------------------------+----------------------------------------+
 | Service Account Name       |           administrator@bootcamp.local |
 +----------------------------+----------------------------------------+
@@ -137,12 +137,12 @@ Change Session Timeout Values
 +----------------------------+----------------------------------------+
 | LDAP Type                  |           group                        |
 +----------------------------+----------------------------------------+
-| Role                       |           Cluster Admin                | 
+| Role                       |           Cluster Admin                |
 +----------------------------+----------------------------------------+
-| Values                     |           Bootcamp Users               | 
+| Values                     |           Bootcamp Users               |
 +----------------------------+----------------------------------------+
 
-6. Close the Roale Mapping and Authentication windows
+6. Close the Role Mapping and Authentication windows
 7. Log out of Prism Element
 8. Log in as **user01@bootcamp.local**
 
@@ -152,5 +152,5 @@ Change Session Timeout Values
 
 
 
-	
+
 .. _Active-Directory: ../active_directory/active_directory_setup.rst

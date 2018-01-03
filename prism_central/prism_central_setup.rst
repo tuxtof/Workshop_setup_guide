@@ -20,7 +20,7 @@
 +--------------------------+------------------------------------------+
 | Username                 |                             Cluster User |
 +--------------------------+------------------------------------------+
-| Password                 |                             Cluster Pass | 
+| Password                 |                             Cluster Pass |
 +--------------------------+------------------------------------------+
 
 
@@ -39,7 +39,7 @@ We will start by installing prism Central
 **Step 1 — Install Prism Central**
 **********************************
 
-1. Click on **Register or create new** on the Prism Central Windget (On the main Cluster page)
+1. Click on **Register or create new** on the Prism Central Widget (On the main Cluster page)
 2. Click on **Deploy** in the "I want to deploy a new Prims Central instance" box
 3. If 5.5.x shows under available version, click **Download**.
 4. If it does not show up, the you will need to click on **upload the Prism Central binary** (The tar & json files should be available on POCFS/HPOC-AFS)
@@ -51,16 +51,16 @@ We will start by installing prism Central
 +--------------------------+------------------------------------------+
 | Container                |                             Bootcamp     |
 +--------------------------+------------------------------------------+
-| VM Sizing                |                             Small        | 
+| VM Sizing                |                             Small        |
 +--------------------------+------------------------------------------+
-| AHV Network              |                             bootcamp     | 
+| AHV Network              |                             bootcamp     |
 +--------------------------+------------------------------------------+
-| IP Address               |                             10.x.x.39    | 
+| IP Address               |                             10.x.x.39    |
 +--------------------------+------------------------------------------+
 
 **Note:** Once the Prism Central deployment task finishes, move on
 
-7. In s seperate browser tab, got to https://10.x.x.39:9440
+7. In s separate browser tab, got to https://10.x.x.39:9440
 8. Log in with admin / Nutanix/4u
 9. Change password to HPOC Password
 10. Continue log in with admin / HPOC Password
@@ -71,8 +71,8 @@ We will start by installing prism Central
 ***********************************
 
 1. Go to the Prism Element browser tab
-2. Click on **Register or create new** on the Prism Central Windget (On the main Cluster page)
-3. Click on **Connect** in the "I already have a Prism Central insteance deployed" box
+2. Click on **Register or create new** on the Prism Central Widget (On the main Cluster page)
+3. Click on **Connect** in the "I already have a Prism Central instance deployed" box
 4. Click **Next**
 5. Enter the following info, and then Click **Connect**:
 
@@ -81,7 +81,7 @@ We will start by installing prism Central
 +--------------------------+------------------------------------------+
 | Username                 |                          admin           |
 +--------------------------+------------------------------------------+
-| Password                 |                          HPOC Password   | 
+| Password                 |                          HPOC Password   |
 +--------------------------+------------------------------------------+
 
 6. You should now see **OK** int he Prism Central Widget (On the main Cluster page)
@@ -109,9 +109,9 @@ Change Session Timeout Values
 +----------------------------+----------------------------------------+
 | Name                       |           Bootcamp                     |
 +----------------------------+----------------------------------------+
-| Domain                     |           bootcamp.local               | 
+| Domain                     |           bootcamp.local               |
 +----------------------------+----------------------------------------+
-| Directory URL              |           ldap://10.x.x.40             | 
+| Directory URL              |           ldap://10.x.x.40             |
 +----------------------------+----------------------------------------+
 | Service Account Name       |           administrator@bootcamp.local |
 +----------------------------+----------------------------------------+
@@ -127,12 +127,12 @@ Change Session Timeout Values
 +----------------------------+----------------------------------------+
 | LDAP Type                  |           group                        |
 +----------------------------+----------------------------------------+
-| Role                       |           Cluster Admin                | 
+| Role                       |           Cluster Admin                |
 +----------------------------+----------------------------------------+
-| Values                     |           Bootcamp Users               | 
+| Values                     |           Bootcamp Users               |
 +----------------------------+----------------------------------------+
 
-6. Close the Roale Mapping and Authentication windows
+6. Close the Role Mapping and Authentication windows
 7. Log out of Prism Central
 8. Log in as **user01@bootcamp.local**
 9. Once you validate you can log in as user01, log out
@@ -152,7 +152,7 @@ In this section we will configure Self-Service Portal (SSP)
 +--------------------------+------------------------------------------+
 | Username                 |            administrator@bootcamp.local  |
 +--------------------------+------------------------------------------+
-| Password                 |            HPOC Password                 | 
+| Password                 |            HPOC Password                 |
 +--------------------------+------------------------------------------+
 
 3. Click on **Add Admins**, and add the "Bootcamp Users" group. Click **Save**
@@ -201,30 +201,4 @@ In this section will create a project for use with SSP & Calm
 **Step 8 — Go forth and Create / Demo / Build / Have Fun**
 **********************************************************
 
-Build Some Blueprints / Applications / or deploy from the Marletplace
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Build Some Blueprints / Applications / or deploy from the Marketplace

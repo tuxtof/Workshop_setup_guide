@@ -213,27 +213,26 @@ $successUsers | ForEach-Object {"$($a).) $($_)"; $a++} |out-file -FilePath  $Log
 
 .. code-block:: bash
 
-Firstname,Password
-user01,nutanix/4u
-user02,nutanix/4u
-user03,nutanix/4u
-user04,nutanix/4u
-user05,nutanix/4u
-user06,nutanix/4u
-user07,nutanix/4u
-user08,nutanix/4u
-user09,nutanix/4u
-user10,nutanix/4u
-user11,nutanix/4u
-user12,nutanix/4u
-user13,nutanix/4u
-user14,nutanix/4u
-user15,nutanix/4u
-user16,nutanix/4u
-user17,nutanix/4u
-user18,nutanix/4u
-user19,nutanix/4u
-user20,nutanix/4u
+	Firstname,Password
+	user01,nutanix/4u
+	user02,nutanix/4u
+	user03,nutanix/4u
+	user04,nutanix/4u
+	user05,nutanix/4u
+	user06,nutanix/4u
+	user07,nutanix/4u
+	user08,nutanix/4u
+	user09,nutanix/4u
+	user10,nutanix/4u
+	user11,nutanix/4u
+	user12,nutanix/4u
+	user13,nutanix/4u
+	user15,nutanix/4u
+	user16,nutanix/4u
+	user17,nutanix/4u
+	user18,nutanix/4u
+	user19,nutanix/4u
+	user20,nutanix/4u
 
 6. Open Powershell, and run the add-user.ps1
 7. Open Active Directory User & Computers, and verify the users and group are there.

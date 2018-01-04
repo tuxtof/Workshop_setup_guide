@@ -156,7 +156,85 @@ add-users.ps1_ and add-users.csv_
 2. create a directory called "scripts" at the root of C:
 3. Create a directory called "logs" in "c:\\scripts"
 4. Copy over the add-users.ps1 and add-users.csv to "C:\\scripts"
+
+.. code-block:: bash
+
+Import-module activedirectory
+
+$Users=Import-csv c:\scripts\add-users.csv
+
+
+$a=1;
+$b=1;
+$failedUsers = @()
+$usersAlreadyExist =@()
+$successUsers = @()
+$VerbosePreference = "Continue"
+$LogFolder = "c:\scripts\logs"
+$GroupName = "Bootcamp Users"
+$OU = "CN=Users, DC=BOOTCAMP,DC=LOCAL"
+
+NEW-ADGroup -name $GroupName –GroupScope Global
+
+ForEach($User in $Users)
+{
+ $User.FirstName = $User.FirstName.substring(0,1).toupper()+$User.FirstName.substring(1).tolower()
+   $FullName = $User.FirstName
+   $Sam = $User.FirstName
+   $dnsroot = '@' + (Get-ADDomain).dnsroot
+   $SAM = $sam.tolower()
+   $UPN = $SAM + "$dnsroot"
+   $email = $Sam + "$dnsroot"
+   $password = $user.password
+try {
+    if (!(get-aduser -Filter {samaccountname -eq "$SAM"})){
+        New-ADUser -Name $FullName -AccountPassword (ConvertTo-SecureString $password -AsPlainText -force) -GivenName $User.FirstName  -Path $OU -SamAccountName $SAM -UserPrincipalName $UPN -EmailAddress $Email -Enabled $TRUE
+        Add-ADGroupMember -Identity $GroupName -Member $Sam
+        Write-Verbose "[PASS] Created $FullName"
+        $successUsers += $FullName
+    }
+
+}
+catch {
+    Write-Warning "[ERROR]Can't create user [$($FullName)] : $_"
+    $failedUsers += $FullName
+}
+}
+if ( !(test-path $LogFolder)) {
+    Write-Verbose "Folder [$($LogFolder)] does not exist, creating"
+    new-item $LogFolder -type directory -Force
+}
+
+Write-verbose "Writing logs"
+$failedUsers |ForEach-Object {"$($b).) $($_)"; $b++} | out-file -FilePath  $LogFolder\FailedUsers.log -Force -Verbose
+$successUsers | ForEach-Object {"$($a).) $($_)"; $a++} |out-file -FilePath  $LogFolder\successUsers.log -Force -Verbose
+
 5. Update the password in "c:\\scripts\\add-user.csv" to match the HPOC password
+
+.. code-block:: bash
+
+Firstname,Password
+user01,nutanix/4u
+user02,nutanix/4u
+user03,nutanix/4u
+user04,nutanix/4u
+user05,nutanix/4u
+user06,nutanix/4u
+user07,nutanix/4u
+user08,nutanix/4u
+user09,nutanix/4u
+user10,nutanix/4u
+user11,nutanix/4u
+user12,nutanix/4u
+user13,nutanix/4u
+user14,nutanix/4u
+user15,nutanix/4u
+user16,nutanix/4u
+user17,nutanix/4u
+user18,nutanix/4u
+user19,nutanix/4u
+user20,nutanix/4u
+
 6. Open Powershell, and run the add-user.ps1
 7. Open Active Directory User & Computers, and verify the users and group are there.
 

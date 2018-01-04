@@ -176,8 +176,7 @@ add-users.ps1_ and add-users.csv_
 
 	NEW-ADGroup -name $GroupName –GroupScope Global
 
-	ForEach($User in $Users)
-	{
+	ForEach($User in $Users){
 		$User.FirstName = $User.FirstName.substring(0,1).toupper()+$User.FirstName.substring(1).tolower()
    	$FullName = $User.FirstName
    	$Sam = $User.FirstName
@@ -192,18 +191,18 @@ add-users.ps1_ and add-users.csv_
         	Add-ADGroupMember -Identity $GroupName -Member $Sam
         	Write-Verbose "[PASS] Created $FullName"
         	$successUsers += $FullName
-    	}
+    		}
 
 			}
 			catch {
-    	Write-Warning "[ERROR]Can't create user [$($FullName)] : $_"
-    	$failedUsers += $FullName
-			}
+    		Write-Warning "[ERROR]Can't create user [$($FullName)] : $_"
+    		$failedUsers += $FullName
+				}
 			}
 			if ( !(test-path $LogFolder)) {
-    	Write-Verbose "Folder [$($LogFolder)] does not exist, creating"
-    	new-item $LogFolder -type directory -Force
-			}
+    		Write-Verbose "Folder [$($LogFolder)] does not exist, creating"
+    		new-item $LogFolder -type directory -Force
+				}
 
 			Write-verbose "Writing logs"
 			$failedUsers |ForEach-Object {"$($b).) $($_)"; $b++} | out-file -FilePath  $LogFolder\FailedUsers.log -Force -Verbose
